@@ -16,6 +16,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     font-weight: 400;
+    font-size: 1.1rem;
 }
 
 /* Container */
@@ -79,7 +80,7 @@ body {
 
 .section-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     font-weight: 500;
     color: #1a1a1a;
     text-align: center;
@@ -93,7 +94,7 @@ body {
 
 .section-description {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-style: italic;
     color: #444;
     text-align: center;
@@ -123,7 +124,7 @@ body {
 
 .dish-name {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: #1a1a1a;
     margin-bottom: 15px;
@@ -133,7 +134,7 @@ body {
 
 .dish-description {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.05rem;
+    font-size: 1.3rem;
     color: #333;
     line-height: 1.7;
     margin-bottom: 20px;
@@ -156,7 +157,7 @@ body {
 
 .macro {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 400;
     color: #555;
     background: transparent;
@@ -181,7 +182,7 @@ body {
 
 .footer-text {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #444;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -209,7 +210,7 @@ body {
     }
     
     .section-title {
-        font-size: 1.4rem;
+        font-size: 2rem;
         letter-spacing: 1px;
     }
     
@@ -218,11 +219,11 @@ body {
     }
     
     .dish-name {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
     
     .dish-description {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     
     .macros {
@@ -230,7 +231,7 @@ body {
     }
     
     .macro {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
 
@@ -254,15 +255,15 @@ body {
     }
     
     .section-title {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
         letter-spacing: 1px;
     }
     
     .dish-name {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     
     .dish-description {
-        font-size: 0.95rem;
+        font-size: 1.1rem;
     }
 }
