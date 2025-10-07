@@ -28,18 +28,18 @@ body {
 
 /* Header/Hero Section */
 .hero {
-    padding: 60px 0 80px;
+    padding: 60px 0 40px;
     background: #f8f6f0;
-    margin-bottom: 60px;
-    border-bottom: 1px solid #e8e6e0;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .header-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    gap: 30px;
+    gap: 20px;
 }
 
 .restaurant-name {
@@ -52,148 +52,16 @@ body {
     margin: 0;
 }
 
-/* Menu Toggle Button */
-.menu-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    padding: 0;
+.tree-icon {
+    opacity: 0.8;
 }
 
-.menu-toggle:hover {
-    opacity: 0.7;
+.tree-icon svg {
+    width: 60px;
+    height: 80px;
 }
 
-.toggle-icon {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-}
 
-.toggle-icon span {
-    width: 18px;
-    height: 1px;
-    background: #2c2c2c;
-    transition: all 0.3s ease;
-}
-
-/* Hidden Navigation Overlay */
-.menu-navigation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2000;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-.menu-navigation.active {
-    visibility: visible;
-    opacity: 1;
-}
-
-.nav-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.nav-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.9);
-    background: #f8f6f0;
-    padding: 60px 40px;
-    border: 1px solid #2c2c2c;
-    max-width: 400px;
-    width: 90%;
-    max-height: 80vh;
-    overflow-y: auto;
-    transition: all 0.3s ease;
-}
-
-.menu-navigation.active .nav-content {
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.nav-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #e8e6e0;
-}
-
-.nav-header h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.5rem;
-    color: #2c2c2c;
-    letter-spacing: 2px;
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: 300;
-}
-
-.close-btn {
-    background: none;
-    border: 1px solid #2c2c2c;
-    font-size: 1.2rem;
-    color: #2c2c2c;
-    cursor: pointer;
-    padding: 8px 12px;
-    width: auto;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    font-family: 'Cormorant Garamond', serif;
-}
-
-.close-btn:hover {
-    background: #2c2c2c;
-    color: #f8f6f0;
-}
-
-.nav-links {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-.nav-link {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
-    font-weight: 300;
-    color: #2c2c2c;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 12px 0;
-    transition: all 0.3s ease;
-    position: relative;
-    text-align: center;
-    border-bottom: 1px solid transparent;
-}
-
-.nav-link:hover {
-    color: #666;
-    border-bottom-color: #2c2c2c;
-}
 
 /* Menu Sections */
 .menu {
@@ -334,7 +202,7 @@ body {
     }
     
     .header-content {
-        gap: 20px;
+        gap: 15px;
     }
     
     .restaurant-name {
@@ -342,31 +210,9 @@ body {
         letter-spacing: 8px;
     }
     
-    .menu-toggle {
-        width: 28px;
-        height: 28px;
-    }
-    
-    .toggle-icon span {
-        width: 16px;
-    }
-    
-    .nav-content {
-        padding: 40px 30px;
-        width: 95%;
-    }
-    
-    .nav-header h3 {
-        font-size: 1.3rem;
-    }
-    
-    .nav-links {
-        gap: 15px;
-    }
-    
-    .nav-link {
-        font-size: 0.9rem;
-        padding: 10px 0;
+    .tree-icon svg {
+        width: 50px;
+        height: 65px;
     }
     
     .section-title {
@@ -401,7 +247,7 @@ body {
     }
     
     .header-content {
-        gap: 15px;
+        gap: 12px;
     }
     
     .restaurant-name {
@@ -409,21 +255,9 @@ body {
         letter-spacing: 6px;
     }
     
-    .menu-toggle {
-        width: 24px;
-        height: 24px;
-    }
-    
-    .toggle-icon span {
-        width: 14px;
-    }
-    
-    .nav-content {
-        padding: 30px 20px;
-    }
-    
-    .nav-links {
-        gap: 12px;
+    .tree-icon svg {
+        width: 40px;
+        height: 50px;
     }
     
     .section-title {

@@ -11,41 +11,25 @@
     <div class="container">
         <header class="hero">
             <div class="header-content">
-                <!-- Small Menu Toggle -->
-                <div class="menu-toggle" onclick="toggleNavigation()">
-                    <div class="toggle-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                <h1 class="restaurant-name">El Tierra</h1>
+                <div class="tree-icon">
+                    <svg width="60" height="80" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Tree Crown -->
+                        <circle cx="30" cy="25" r="20" stroke="#2c2c2c" stroke-width="1" fill="none"/>
+                        <circle cx="20" cy="30" r="12" stroke="#2c2c2c" stroke-width="1" fill="none"/>
+                        <circle cx="40" cy="30" r="12" stroke="#2c2c2c" stroke-width="1" fill="none"/>
+                        <circle cx="30" cy="40" r="15" stroke="#2c2c2c" stroke-width="1" fill="none"/>
+                        <!-- Tree Trunk -->
+                        <rect x="28" y="50" width="4" height="25" stroke="#2c2c2c" stroke-width="1" fill="none"/>
+                        <!-- Roots -->
+                        <path d="M28 75 Q20 78 15 75" stroke="#2c2c2c" stroke-width="1" fill="none"/>
+                        <path d="M32 75 Q40 78 45 75" stroke="#2c2c2c" stroke-width="1" fill="none"/>
+                    </svg>
                 </div>
-                <h1 class="restaurant-name">Étoile</h1>
             </div>
         </header>
 
-        <!-- Hidden Navigation Overlay -->
-        <nav class="menu-navigation" id="menuNav">
-            <div class="nav-overlay" onclick="closeNavigation()"></div>
-            <div class="nav-content">
-                <div class="nav-header">
-                    <h3>Menu</h3>
-                    <button class="close-btn" onclick="closeNavigation()">Close</button>
-                </div>
-                <div class="nav-links">
-                    <a href="#breakfast" class="nav-link" onclick="closeNavigation()">Breakfast</a>
-                    <a href="#lunch" class="nav-link" onclick="closeNavigation()">Lunch</a>
-                    <a href="#dinner" class="nav-link" onclick="closeNavigation()">Dinner</a>
-                    <a href="#soups" class="nav-link" onclick="closeNavigation()">Soups</a>
-                    <a href="#appetizers" class="nav-link" onclick="closeNavigation()">Appetizers</a>
-                    <a href="#curries" class="nav-link" onclick="closeNavigation()">Curries</a>
-                    <a href="#rice" class="nav-link" onclick="closeNavigation()">Rice</a>
-                    <a href="#bread" class="nav-link" onclick="closeNavigation()">Bread</a>
-                    <a href="#meal-for-one" class="nav-link" onclick="closeNavigation()">Meal for One</a>
-                    <a href="#smoothies" class="nav-link" onclick="closeNavigation()">Smoothies</a>
-                    <a href="#desserts" class="nav-link" onclick="closeNavigation()">Desserts</a>
-                </div>
-            </div>
-        </nav>
+
 
         <main class="menu">
                         <section id="breakfast" class="menu-section">
@@ -548,25 +532,6 @@
         </footer>
     </div>
 
-    <script>
-        function toggleNavigation() {
-            const nav = document.getElementById('menuNav');
-            nav.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
 
-        function closeNavigation() {
-            const nav = document.getElementById('menuNav');
-            nav.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-
-        // Close navigation when clicking outside or pressing Escape
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                closeNavigation();
-            }
-        });
-    </script>
 </body>
 </html>
