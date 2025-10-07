@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étoile - Fine Dining Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <h1 class="restaurant-name">Étoile</h1>
+            <p class="tagline">Contemporary Culinary Excellence</p>
+            <div class="decorative-line"></div>
+            
+            <!-- Menu Sections Toggle -->
+            <div class="menu-toggle" onclick="toggleNavigation()">
+                <div class="toggle-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="toggle-text">Menu Sections</span>
+            </div>
+        </header>
+
+        <!-- Hidden Navigation Overlay -->
+        <nav class="menu-navigation" id="menuNav">
+            <div class="nav-overlay" onclick="closeNavigation()"></div>
+            <div class="nav-content">
+                <div class="nav-header">
+                    <h3>Menu Sections</h3>
+                    <button class="close-btn" onclick="closeNavigation()">&times;</button>
+                </div>
+                <div class="nav-links">
+                    <a href="#breakfast" class="nav-link" onclick="closeNavigation()">Breakfast</a>
+                    <a href="#lunch" class="nav-link" onclick="closeNavigation()">Lunch</a>
+                    <a href="#dinner" class="nav-link" onclick="closeNavigation()">Dinner</a>
+                    <a href="#soups" class="nav-link" onclick="closeNavigation()">Soups</a>
+                    <a href="#appetizers" class="nav-link" onclick="closeNavigation()">Appetizers</a>
+                    <a href="#curries" class="nav-link" onclick="closeNavigation()">Curries</a>
+                    <a href="#rice" class="nav-link" onclick="closeNavigation()">Rice</a>
+                    <a href="#bread" class="nav-link" onclick="closeNavigation()">Bread</a>
+                    <a href="#meal-for-one" class="nav-link" onclick="closeNavigation()">Meal for One</a>
+                    <a href="#smoothies" class="nav-link" onclick="closeNavigation()">Smoothies</a>
+                    <a href="#desserts" class="nav-link" onclick="closeNavigation()">Desserts</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="menu">
+                        <section id="breakfast" class="menu-section">
+                <h2 class="section-title">Breakfast</h2>
+                <div class="section-description">Morning indulgences to awaken your senses</div>
+                
+                <!-- Signature Breakfast Plates -->
+                <div class="dish-item">
+                    <h3 class="dish-name">🌞 Bulletproof Breakfast Thali</h3>
+                    <p class="dish-description">A composed morning plate of sunny-side-up eggs glistening with coconut oil, paired with toasted rice bread, a spoon of soft uppudu pindi, and creamy avocado. Served with tender steamed sweet potato, fresh blueberries, and a light cocoa-butter whey sip — a gentle, grounded start to the day.</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 515</span>
+                        <span class="macro">Protein: 30g</span>
+                        <span class="macro">Carbs: 21g</span>
+                        <span class="macro">Fat: 32g</span>
+                        <span class="macro">Fiber: 5g</span>
+                    </div>
+                </div>
+
+                <!-- Classic Egg Dishes -->
+                <div class="dish-item">
+                    <h3 class="dish-name">Scrambled Eggs & Avocado</h3>
+                    <p class="dish-description">Farm-fresh eggs softly scrambled in coconut oil with wilted spinach, served with creamy avocado and warm rice bread, finished with a drizzle of olive oil and a squeeze of lime.</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 520</span>
+                        <span class="macro">Protein: 23g</span>
+                        <span class="macro">Carbs: 26g</span>
+                        <span class="macro">Fat: 36g</span>
+                        <span class="macro">Fiber: 7g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">Poached Eggs Plate</h3>
+                    <p class="dish-description">Two farm-fresh eggs gently poached and served over steamed spinach and a spoon of mashed sweet potato, finished with olive oil and black pepper. A pure, grounded plate — simple, restorative, and composed for clarity of flavor and digestion.</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 460</span>
+                        <span class="macro">Protein: 27g</span>
+                        <span class="macro">Carbs: 18g</span>
+                        <span class="macro">Fat: 31g</span>
+                        <span class="macro">Fiber: 4g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">Omelette with Sautéed Vegetables & Rice Bread</h3>
+                    <p class="dish-description">Fluffy two-egg omelette cooked in coconut oil, served with gently steamed carrots and zucchini sautéed in ghee, alongside soft rice bread for a warm, balanced, and grounding plate.</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 495</span>
+                        <span class="macro">Protein: 28g</span>
+                        <span class="macro">Carbs: 22g</span>
+                        <span class="macro">Fat: 32g</span>
+                        <span class="macro">Fiber: 5g</span>
+                    </div>
+                </div>
+
+                <!-- Toast & Handheld Options -->
+                <div class="dish-item">
+                    <h3 class="dish-name">Avocado Toast with Sliced Eggs</h3>
+                    <p class="dish-description">Creamy mashed avocado spread over warm rice bread, topped with sliced farm-fresh boiled eggs, sea salt, and a hint of black pepper for a clean, satisfying start.</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 480</span>
+                        <span class="macro">Protein: 22g</span>
+                        <span class="macro">Carbs: 28g</span>
+                        <span class="macro">Fat: 30g</span>
+                        <span class="macro">Fiber: 6g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">Breakfast Sandwich</h3>
+                    <p class="dish-description">Lightly toasted rice bread layered with a soft omelette, sliced avocado, and a touch of ghee — warm, creamy, and balanced for a clean morning bite. A minimal yet indulgent start that blends protein richness with calm fats and gentle carbs.</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 470</span>
+                        <span class="macro">Protein: 28g</span>
+                        <span class="macro">Carbs: 26g</span>
+                        <span class="macro">Fat: 28g</span>
+                        <span class="macro">Fiber: 5g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">Breakfast Tacos</h3>
+                    <p class="dish-description">Delicate rice-flour tacos filled with fluffy scrambled eggs, diced zucchini, and a drizzle of ghee, topped with a squeeze of lime and coriander. A playful twist on breakfast — light, aromatic, and satisfying without heaviness or spice.</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 495</span>
+                        <span class="macro">Protein: 26g</span>
+                        <span class="macro">Carbs: 28g</span>
+                        <span class="macro">Fat: 29g</span>
+                        <span class="macro">Fiber: 6g</span>
+                    </div>
+                </div>
+
+                <!-- Whey Protein Smoothies -->
+                <div class="dish-item">
+                    <h3 class="dish-name">Avocado Whey Smoothie</h3>
+                    <p class="dish-description">A velvety blend of ripe avocado, pure whey isolate, and melted cocoa butter, gently sweetened with stevia and blended warm for a rich, gut-soothing morning fuel.</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 500</span>
+                        <span class="macro">Protein: 32g</span>
+                        <span class="macro">Carbs: 10g</span>
+                        <span class="macro">Fat: 35g</span>
+                        <span class="macro">Fiber: 7g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">🍌 Banana Whey Smoothie</h3>
+                    <p class="dish-description">A silky blend of ripe banana, pure whey isolate, and melted cocoa butter, finished with a touch of coconut oil and stevia — a clean, nourishing start that's sweet, smooth, and perfectly balanced.</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 495</span>
+                        <span class="macro">Protein: 32g</span>
+                        <span class="macro">Carbs: 17g</span>
+                        <span class="macro">Fat: 34g</span>
+                        <span class="macro">Fiber: 4g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">🍍 Pineapple Whey Smoothie</h3>
+                    <p class="dish-description">A golden, tropical blend of ripe pineapple, pure whey isolate, and melted cocoa butter, balanced with coconut oil and stevia for clean morning brightness.</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 490</span>
+                        <span class="macro">Protein: 32g</span>
+                        <span class="macro">Carbs: 18g</span>
+                        <span class="macro">Fat: 33g</span>
+                        <span class="macro">Fiber: 4g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">🫐 Blueberry Whey Smoothie</h3>
+                    <p class="dish-description">A vibrant violet blend of blueberries, whey isolate, and cocoa butter, faintly sweetened with stevia for a smooth, antioxidant-rich finish.</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 495</span>
+                        <span class="macro">Protein: 32g</span>
+                        <span class="macro">Carbs: 16g</span>
+                        <span class="macro">Fat: 34g</span>
+                        <span class="macro">Fiber: 5g</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="lunch" class="menu-section">
+                <h2 class="section-title">Lunch</h2>
+                <div class="section-description">Midday refinement with seasonal sophistication</div>
+                
+                <div class="dish-item">
+                    <h3 class="dish-name">Seared Duck Breast Salad</h3>
+                    <p class="dish-description">Pink duck breast over mixed greens with fig vinaigrette, goat cheese, and candied walnuts</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 450</span>
+                        <span class="macro">Protein: 32g</span>
+                        <span class="macro">Carbs: 18g</span>
+                        <span class="macro">Fat: 28g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">Lobster Risotto</h3>
+                    <p class="dish-description">Creamy Arborio rice with fresh lobster, saffron, and micro herbs, finished with Parmesan</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 520</span>
+                        <span class="macro">Protein: 28g</span>
+                        <span class="macro">Carbs: 48g</span>
+                        <span class="macro">Fat: 22g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">Quinoa Power Bowl</h3>
+                    <p class="dish-description">Tri-color quinoa with roasted vegetables, avocado, and tahini dressing with hemp seeds</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 380</span>
+                        <span class="macro">Protein: 16g</span>
+                        <span class="macro">Carbs: 52g</span>
+                        <span class="macro">Fat: 14g</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dinner" class="menu-section">
+                <h2 class="section-title">Dinner</h2>
+                <div class="section-description">Evening elegance for the discerning palate</div>
+                
+                <div class="dish-item">
+                    <h3 class="dish-name">Dry-Aged Ribeye</h3>
+                    <p class="dish-description">28-day dry-aged ribeye with roasted bone marrow, purple potatoes, and red wine jus</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 680</span>
+                        <span class="macro">Protein: 52g</span>
+                        <span class="macro">Carbs: 24g</span>
+                        <span class="macro">Fat: 42g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">Chilean Sea Bass</h3>
+                    <p class="dish-description">Pan-seared sea bass with miso glaze, forbidden black rice, and Asian pear salad</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 480</span>
+                        <span class="macro">Protein: 38g</span>
+                        <span class="macro">Carbs: 32g</span>
+                        <span class="macro">Fat: 22g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">Mushroom Wellington</h3>
+                    <p class="dish-description">Wild mushroom duxelles wrapped in flaky pastry with roasted root vegetables and port reduction</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 420</span>
+                        <span class="macro">Protein: 14g</span>
+                        <span class="macro">Carbs: 48g</span>
+                        <span class="macro">Fat: 18g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">🐟 Grilled Himalayan Trout with Sautéed Spinach & Mashed Sweet Potato</h3>
+                    <p class="dish-description">Flaky Himalayan trout grilled in olive oil with sea salt and cracked pepper, served beside a silky mash of steamed sweet potato and a bed of gently sautéed spinach finished with ghee and lime. A light, clean dish that balances warmth, color, and omega-rich nourishment.</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 540</span>
+                        <span class="macro">Protein: 44g</span>
+                        <span class="macro">Carbs: 25g</span>
+                        <span class="macro">Fat: 26g</span>
+                        <span class="macro">Fiber: 5g</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="soups" class="menu-section">
+                <h2 class="section-title">Soups</h2>
+                <div class="section-description">Artisanal broths crafted with precision</div>
+                
+                <div class="dish-item">
+                    <h3 class="dish-name">Butternut Squash Velouté</h3>
+                    <p class="dish-description">Silky butternut squash soup with sage oil, toasted pumpkin seeds, and micro herbs</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 180</span>
+                        <span class="macro">Protein: 4g</span>
+                        <span class="macro">Carbs: 22g</span>
+                        <span class="macro">Fat: 9g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">Lobster Bisque</h3>
+                    <p class="dish-description">Rich lobster shell reduction with cognac, finished with cream and fresh tarragon</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 280</span>
+                        <span class="macro">Protein: 18g</span>
+                        <span class="macro">Carbs: 8g</span>
+                        <span class="macro">Fat: 20g</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="appetizers" class="menu-section">
+                <h2 class="section-title">Appetizers</h2>
+                <div class="section-description">Elegant beginnings to your culinary journey</div>
+                
+                <div class="dish-item">
+                    <h3 class="dish-name">Seared Scallops</h3>
+                    <p class="dish-description">Pan-seared scallops with cauliflower purée, pancetta crumble, and microgreens</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 240</span>
+                        <span class="macro">Protein: 22g</span>
+                        <span class="macro">Carbs: 12g</span>
+                        <span class="macro">Fat: 12g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">Tuna Tartare</h3>
+                    <p class="dish-description">Yellowfin tuna with avocado mousse, sesame tuile, and ponzu reduction</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 190</span>
+                        <span class="macro">Protein: 24g</span>
+                        <span class="macro">Carbs: 6g</span>
+                        <span class="macro">Fat: 8g</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="curries" class="menu-section">
+                <h2 class="section-title">Curries</h2>
+                <div class="section-description">Aromatic spice blends from around the world</div>
+                
+                <div class="dish-item">
+                    <h3 class="dish-name">Lamb Rogan Josh</h3>
+                    <p class="dish-description">Slow-braised lamb in aromatic tomato and yogurt curry with Kashmiri chilies</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 420</span>
+                        <span class="macro">Protein: 35g</span>
+                        <span class="macro">Carbs: 18g</span>
+                        <span class="macro">Fat: 24g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">Thai Green Curry</h3>
+                    <p class="dish-description">Coconut milk curry with thai basil, eggplant, and your choice of protein</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 380</span>
+                        <span class="macro">Protein: 28g</span>
+                        <span class="macro">Carbs: 15g</span>
+                        <span class="macro">Fat: 26g</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="rice" class="menu-section">
+                <h2 class="section-title">Rice</h2>
+                <div class="section-description">Perfectly seasoned grains to complement your meal</div>
+                
+                <div class="dish-item">
+                    <h3 class="dish-name">Saffron Pilaf</h3>
+                    <p class="dish-description">Basmati rice infused with saffron, toasted almonds, and golden raisins</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 220</span>
+                        <span class="macro">Protein: 6g</span>
+                        <span class="macro">Carbs: 42g</span>
+                        <span class="macro">Fat: 4g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">Coconut Jasmine Rice</h3>
+                    <p class="dish-description">Fragrant jasmine rice cooked in coconut milk with curry leaves</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 200</span>
+                        <span class="macro">Protein: 4g</span>
+                        <span class="macro">Carbs: 38g</span>
+                        <span class="macro">Fat: 6g</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="bread" class="menu-section">
+                <h2 class="section-title">Bread</h2>
+                <div class="section-description">Artisanal breads baked fresh daily</div>
+                
+                <div class="dish-item">
+                    <h3 class="dish-name">Truffle Focaccia</h3>
+                    <p class="dish-description">House-made focaccia with truffle oil, rosemary, and sea salt</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 160</span>
+                        <span class="macro">Protein: 5g</span>
+                        <span class="macro">Carbs: 28g</span>
+                        <span class="macro">Fat: 4g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">Garlic Naan</h3>
+                    <p class="dish-description">Traditional clay oven-baked naan brushed with garlic butter and cilantro</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 180</span>
+                        <span class="macro">Protein: 6g</span>
+                        <span class="macro">Carbs: 32g</span>
+                        <span class="macro">Fat: 3g</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="meal-for-one" class="menu-section">
+                <h2 class="section-title">Meal for One</h2>
+                <div class="section-description">Complete dining experiences designed for solo indulgence</div>
+                
+                <div class="dish-item">
+                    <h3 class="dish-name">Chef's Tasting Plate</h3>
+                    <p class="dish-description">A curated selection of our finest offerings on a single plate</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 580</span>
+                        <span class="macro">Protein: 42g</span>
+                        <span class="macro">Carbs: 35g</span>
+                        <span class="macro">Fat: 28g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">Wagyu Steak Dinner</h3>
+                    <p class="dish-description">Premium wagyu beef with roasted vegetables and herb butter</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 650</span>
+                        <span class="macro">Protein: 48g</span>
+                        <span class="macro">Carbs: 22g</span>
+                        <span class="macro">Fat: 42g</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="smoothies" class="menu-section">
+                <h2 class="section-title">Smoothies</h2>
+                <div class="section-description">Refreshing blends of premium ingredients</div>
+                
+                <div class="dish-item">
+                    <h3 class="dish-name">Green Goddess</h3>
+                    <p class="dish-description">Spinach, avocado, mango, coconut water, and lime with a hint of mint</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 140</span>
+                        <span class="macro">Protein: 3g</span>
+                        <span class="macro">Carbs: 24g</span>
+                        <span class="macro">Fat: 6g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">Berry Antioxidant</h3>
+                    <p class="dish-description">Blueberry, acai, strawberry, and pomegranate with Greek yogurt</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 160</span>
+                        <span class="macro">Protein: 8g</span>
+                        <span class="macro">Carbs: 28g</span>
+                        <span class="macro">Fat: 2g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">Avocado Whey Smoothie</h3>
+                    <p class="dish-description">Warm rice bread layered with creamy avocado and topped with sliced farm-fresh boiled eggs, finished with sea salt, cracked pepper, and a drizzle of olive oil.</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 500</span>
+                        <span class="macro">Protein: 32g</span>
+                        <span class="macro">Carbs: 10g</span>
+                        <span class="macro">Fat: 35g</span>
+                        <span class="macro">Fiber: 7g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">🍌 Banana Whey Smoothie</h3>
+                    <p class="dish-description">A silky blend of ripe banana, pure whey isolate, and melted cocoa butter, finished with a touch of coconut oil and stevia — a clean, nourishing start that's sweet, smooth, and perfectly balanced.</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 495</span>
+                        <span class="macro">Protein: 32g</span>
+                        <span class="macro">Carbs: 17g</span>
+                        <span class="macro">Fat: 34g</span>
+                        <span class="macro">Fiber: 4g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">🍍 Pineapple Whey Smoothie</h3>
+                    <p class="dish-description">A golden, tropical blend of ripe pineapple, pure whey isolate, and melted cocoa butter, balanced with coconut oil and stevia for clean morning brightness.</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 490</span>
+                        <span class="macro">Protein: 32g</span>
+                        <span class="macro">Carbs: 18g</span>
+                        <span class="macro">Fat: 33g</span>
+                        <span class="macro">Fiber: 4g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">🫐 Blueberry Whey Smoothie</h3>
+                    <p class="dish-description">A vibrant violet blend of blueberries, whey isolate, and cocoa butter, faintly sweetened with stevia for a smooth, antioxidant-rich finish.</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 495</span>
+                        <span class="macro">Protein: 32g</span>
+                        <span class="macro">Carbs: 16g</span>
+                        <span class="macro">Fat: 34g</span>
+                        <span class="macro">Fiber: 5g</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="desserts" class="menu-section">
+                <h2 class="section-title">Desserts</h2>
+                <div class="section-description">Sweet symphonies to conclude your experience</div>
+                
+                <div class="dish-item">
+                    <h3 class="dish-name">Chocolate Soufflé</h3>
+                    <p class="dish-description">Warm dark chocolate soufflé with vanilla bean ice cream and gold leaf</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 320</span>
+                        <span class="macro">Protein: 8g</span>
+                        <span class="macro">Carbs: 42g</span>
+                        <span class="macro">Fat: 18g</span>
+                    </div>
+                </div>
+
+                <div class="dish-item">
+                    <h3 class="dish-name">Crème Brûlée</h3>
+                    <p class="dish-description">Classic vanilla bean custard with caramelized sugar and fresh berries</p>
+                    <div class="macros">
+                        <span class="macro">Calories: 280</span>
+                        <span class="macro">Protein: 6g</span>
+                        <span class="macro">Carbs: 32g</span>
+                        <span class="macro">Fat: 14g</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="decorative-line"></div>
+            <p class="footer-text">Étoile Restaurant • Contemporary Fine Dining</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleNavigation() {
+            const nav = document.getElementById('menuNav');
+            nav.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeNavigation() {
+            const nav = document.getElementById('menuNav');
+            nav.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close navigation when clicking outside or pressing Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeNavigation();
+            }
+        });
+    </script>
+</body>
+</html>
